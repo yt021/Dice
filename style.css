@@ -41,8 +41,27 @@ body{
     width: 25rem;
     border: 20px solid black;
     border-radius: 10%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    transition: width 2s,border-width 2s,height 2s, transform 2s;
+}
+.d1:hover,.d2:hover{
+    height: 0rem;
+    width: 0rem;
+    border-width: 0px;
+    transform: rotate(180deg);
 }
 
+.dot{
+    height: 4rem;
+    width: 4rem;
+    background-color: black;
+    border-radius: 50%;
+    
+}
 @media only screen and (max-width: 1024px) {
     .d1,.d2 {
         height: 20rem;
